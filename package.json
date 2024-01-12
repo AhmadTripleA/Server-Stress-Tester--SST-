@@ -1,0 +1,18 @@
+{
+  "name": "server-stress-tester-sst",
+  "version": "1.0.0",
+  "description": "a small application that sends X amount of requests to a server to stress test it, and logs stats to measure server performance",
+  "main": "main.js",
+  "scripts": {
+    "start": "node sst.js",
+    "stress-test": "node sst.js",
+    "stress-test-multiple": "concurrently \"npm run stress-test\" \"npm run stress-test\""
+  },
+  "author": "Ahmad Aktaa",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1"
+  }
+}
